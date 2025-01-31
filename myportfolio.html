@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Webpage</title>
+
+    <link rel="stylesheet"  href="css/myportfolio.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Gloria</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+                <!-- <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Experience</a></div> -->
+
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Skills</a>
+                <a href="">Services</a>
+                <a href="#">Education</a>
+                <a href="#">Experience</a>
+                <a href="">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="img/profpic.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey! I'm <span>Glory</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div> 
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I'm a passionate software developer with a strong interest in creating innovative solutions. My goal is to develop applications and websites that are user-friendly, reliable, and secure. I am dedicated to staying up-to-date with the latest trends and technologies in the software development field, constantly enhancing my skills to deliver exceptional results.</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <body>
+    <header>
+        <img src="img/profpic.jpg" alt="Photo of Glory Gitonga">
+        <h1>Welcome to My Personal Webpage</h1>
+    </header>
+
+    <nav>
+        <div>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+    </div>
+    </nav>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Hi! I'm Glory Gitonga, a passionate software developer with a strong interest in creating innovative solutions. My goal is to develop applications and websites that are user-friendly, reliable, and secure. I am dedicated to staying up-to-date with the latest trends and technologies in the software development field, constantly enhancing my skills to deliver exceptional results.</p>
+    </section>    
+
+    <section id="portfolio" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <ul>
+            <li>
+                <strong>Gateway Payment System:</strong>
+                A React-based web application that enables seamless integration of payment processing for businesses. 
+                <a href="https://github.com/yourusername/gateway-payment-system" target="_blank" rel="noopener noreferrer">View Project</a>
+            </li>
+            <li>
+                <strong>Personal Portfolio Website:</strong>
+                A responsive and stylish personal portfolio using HTML, CSS, and JavaScript to highlight my skills and achievements. 
+                <a href="https://github.com/yourusername/personal-portfolio" target="_blank" rel="noopener noreferrer">View Project</a>
+            </li>
+            <li>
+                <strong>Dynamic Weather Dashboard:</strong>
+                An interactive React application that fetches and displays real-time weather updates using APIs. 
+                <a href="https://github.com/yourusername/weather-dashboard" target="_blank" rel="noopener noreferrer">View Project</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="blog" data-aos="fade-up">
+        <h2>Blog</h2>
+        <p>Stay tuned for my latest thoughts, insights, and stories!</p>
+    </section>
+
+    <section class="contact" id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <ul>
+            <li>Email: glorygitonga14@gmail.com</li>
+            <li>Phone: +971554123572</li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/glory-gitonga-55783a250/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/gloria-gee" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/simplygloow/" target="_blank" rel="noopener noreferrer">Instagram</a>    
+        </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Responsive Web Design</li>
+            <li>Bootstrap</li>
+            <li>Version Control (Git)</li>
+            <li>APIs Integration</li>
+            <li>UI/UX Design Principles</li>
+            <li>Angular</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>JWT Authentication</li>
+        </ul>
+    </section>
+
+    <section id="hobbies" data-aos="fade-up">
+        <h2>Hobbies</h2>
+        <ul class="hobbies-list">
+            <li>Traveling</li>
+            <li>Swimming</li>
+            <li>Playing Video Games</li>
+            <li>Baking</li>
+            <li>Reading</li>
+            <li>Cooking</li>
+            <li>Problem-solving</li>
+            <li>Technology</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Glory Gitonga. All Rights Reserved.</p>
+    </footer>
+
+    <!-- /<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+    <script>
+    </script>
+</body>
+</html> -->
